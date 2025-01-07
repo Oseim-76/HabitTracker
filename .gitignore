@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+*.swp
+
+# IDE
+.idea/
+.vscode/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build
+/backend/dist
+/backend/uploads
+
+# Testing
+coverage/
+
+# Expo
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Temporary files
+*.log
+.DS_Store
+*.swp
+.tmp/
+
+# Local development
+local.properties
+*.iml
+
+# Metro
+.metro-health-check*

@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "HabitFlow",
+    "slug": "habitflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "web": {
+      "bundler": "metro"
+    },
+    "scheme": "your-app-scheme",
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.habittracker",
+      "associatedDomains": ["applinks:habittracker.com"],
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app needs access to your photos to let you set a profile picture.",
+        "NSCameraUsageDescription": "The app needs access to your camera to let you take profile pictures."
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.habittracker",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "habittracker",
+              "host": "habittracker.com",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to let you upload a profile image."
+        }
+      ]
+    ]
+  }
+} 

@@ -1,0 +1,12 @@
+model Habit {
+  id             String   @id @default(uuid())
+  user_id        String
+  name           String
+  description    String?
+  category       String
+  frequency      String
+  scheduled_time String   // Store as "HH:mm"
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+  user           User     @relation(fields: [user_id], references: [id])
+} 
