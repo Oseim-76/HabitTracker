@@ -1,13 +1,11 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
     "paths": {
       "*": ["src/*"]
     },
-    "jsx": "react-native",
-    "types": ["react", "react-native"],
+    "types": ["node", "react-native", "react"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,13 +19,6 @@
     "noEmit": true,
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": [
-    "src/**/*",
-    "src/types/*.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "babel.config.js",
-    "metro.config.js"
-  ]
-} 
+  "include": ["src/**/*", "src/types/*.d.ts"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
